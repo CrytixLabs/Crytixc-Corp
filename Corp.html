@@ -1,0 +1,147 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:var(--font-sans);}
+
+.page{max-width:660px;margin:0 auto;padding:2rem 1.25rem 3rem;}
+
+.hero{padding:3rem 2rem 2.5rem;border:0.5px solid var(--color-border-tertiary);border-radius:16px;background:var(--color-background-primary);margin-bottom:1.25rem;text-align:center;}
+.live-pill{display:inline-flex;align-items:center;gap:7px;background:var(--color-background-secondary);border:0.5px solid var(--color-border-tertiary);border-radius:999px;padding:5px 14px 5px 10px;font-size:12px;color:var(--color-text-secondary);margin-bottom:1.5rem;}
+.live-dot{width:7px;height:7px;border-radius:50%;background:#1D9E75;}
+.hero-title{font-size:1.875rem;font-weight:500;color:var(--color-text-primary);line-height:1.2;margin-bottom:.75rem;}
+.hero-title span{color:#1D9E75;}
+.hero-sub{font-size:13.5px;color:var(--color-text-secondary);line-height:1.7;max-width:400px;margin:0 auto 2rem;}
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);border:0.5px solid var(--color-border-tertiary);border-radius:10px;overflow:hidden;}
+.stat-cell{padding:.875rem .5rem;text-align:center;background:var(--color-background-secondary);}
+.stat-cell+.stat-cell{border-left:0.5px solid var(--color-border-tertiary);}
+.stat-n{font-size:1.1rem;font-weight:500;color:var(--color-text-primary);}
+.stat-l{font-size:11px;color:var(--color-text-secondary);margin-top:3px;}
+
+.features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:1.25rem;}
+.feat{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:12px;padding:1.125rem;}
+.feat-dot{width:8px;height:8px;border-radius:50%;margin-bottom:.75rem;}
+.fd-teal{background:#1D9E75;}
+.fd-purple{background:#7F77DD;}
+.fd-amber{background:#BA7517;}
+.fd-blue{background:#378ADD;}
+.feat h3{font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:4px;}
+.feat p{font-size:12px;color:var(--color-text-secondary);line-height:1.6;}
+
+.divider{display:flex;align-items:center;gap:10px;margin:1.5rem 0 1rem;}
+.div-line{flex:1;height:0.5px;background:var(--color-border-tertiary);}
+.div-txt{font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--color-text-secondary);}
+
+.faq{display:flex;flex-direction:column;gap:5px;}
+.fi{border:0.5px solid var(--color-border-tertiary);border-radius:10px;overflow:hidden;background:var(--color-background-primary);transition:border-color .15s;}
+.fi.open{border-color:var(--color-border-secondary);}
+.fq{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:.875rem 1.125rem;cursor:pointer;font-size:13px;font-weight:500;color:var(--color-text-primary);user-select:none;transition:background .1s;}
+.fq:hover{background:var(--color-background-secondary);}
+.arr-wrap{width:18px;height:18px;border-radius:50%;background:var(--color-background-secondary);border:0.5px solid var(--color-border-tertiary);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:8px;color:var(--color-text-secondary);transition:transform .22s ease;}
+.fi.open .arr-wrap{transform:rotate(180deg);}
+.fa{overflow:hidden;max-height:0;transition:max-height .3s ease;}
+.fi.open .fa{max-height:180px;}
+.fa-in{border-top:0.5px solid var(--color-border-tertiary);padding:.75rem 1.125rem .9rem;font-size:12.5px;color:var(--color-text-secondary);line-height:1.65;}
+
+.footer{margin-top:1.75rem;padding-top:1.25rem;border-top:0.5px solid var(--color-border-tertiary);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+.tags{display:flex;gap:5px;flex-wrap:wrap;}
+.tag{font-size:11px;padding:3px 10px;border-radius:999px;font-weight:500;}
+.tg{background:#000000;color:#3B6D11;}
+.tp{background:#000000;color:#534AB7;}
+.tt{background:#000000;color:#0F6E56;}
+.fnote{font-size:11px;color:var(--color-text-secondary);}
+</style>
+
+<h2 class="sr-only">Crytixc Labs</h2>
+
+<div class="page">
+
+  <div class="hero">
+    <div class="live-pill">
+      <div class="live-dot"></div>
+      Bots actifs · Farm en cours
+    </div>
+    <div class="hero-title">Autofarming MM2<br>sur <span>Roblox</span></div>
+    <p class="hero-sub">Des bots tournent en continu pour farmer à ta place sur Murder Mystery 2 — godlys, seers, knives, tout est collecté automatiquement.</p>
+    <div class="stat-row">
+      <div class="stat-cell"><div class="stat-n">24/7</div><div class="stat-l">Uptime</div></div>
+      <div class="stat-cell"><div class="stat-n">100%</div><div class="stat-l">Auto</div></div>
+      <div class="stat-cell"><div class="stat-n">&lt;1h</div><div class="stat-l">Démarrage</div></div>
+      <div class="stat-cell"><div class="stat-n">FR</div><div class="stat-l">Locaux</div></div>
+    </div>
+  </div>
+
+  <div class="features">
+    <div class="feat">
+      <div class="feat-dot fd-teal"></div>
+      <h3>Bots dédiés</h3>
+      <p>Comptes actifs en continu sur plusieurs serveurs MM2 séparés, sans interruption.</p>
+    </div>
+    <div class="feat">
+      <div class="feat-dot fd-purple"></div>
+      <h3>Collecte automatique</h3>
+      <p>Chaque godly, seer et knife est capturé et stocké dès l'apparition du drop.</p>
+    </div>
+    <div class="feat">
+      <div class="feat-dot fd-amber"></div>
+      <h3>Locaux privés</h3>
+      <p>Machines physiques en France, fibre dédiée, aucun cloud tiers. Stable et discret.</p>
+    </div>
+    <div class="feat">
+      <div class="feat-dot fd-blue"></div>
+      <h3>Suivi Discord</h3>
+      <p>Rapports envoyés régulièrement : items collectés, uptime, valeur estimée.</p>
+    </div>
+  </div>
+
+  <div class="divider"><div class="div-line"></div><span class="div-txt">FAQ</span><div class="div-line"></div></div>
+
+  <div class="faq">
+    <div class="fi">
+      <div class="fq" onclick="tog(this)">Où se trouvent vos locaux et serveurs ?<div class="arr-wrap">▾</div></div>
+      <div class="fa"><div class="fa-in">Notre équipe n'a pour l'instant pas de locaux. Certains locaux sont en négociations, l'achat des locaux est prévu pour 2027. Si possible</div></div>
+    </div>
+    <div class="fi">
+      <div class="fq" onclick="tog(this)">Combien de bots tournent en parallèle ?<div class="arr-wrap">▾</div></div>
+      <div class="fa"><div class="fa-in">C'est different selon les jours. Des compte peuvent malheureusement se déconnecter. Pour les jours indifférent; Lundi,Mardi: = 50 comptes; Mercedi,Jeudi,Vendredi: = 100 comptes. Puis le Week End environ 150 comptes </div></div>
+    </div>
+    <div class="fi">
+      <div class="fq" onclick="tog(this)">Quel logiciel utilisez-vous pour automatiser ?<div class="arr-wrap">▾</div></div>
+      <div class="fa"><div class="fa-in">Scripts Lua injectés via executor, combinés à des macros système pour gérer les sessions et les reconnexions. Tout est maintenu à jour en interne pour suivre les patchs MM2.</div></div>
+    </div>
+    <div class="fi">
+      <div class="fq" onclick="tog(this)">Les comptes risquent-ils d'être bannis ?<div class="arr-wrap">▾</div></div>
+      <div class="fa"><div class="fa-in">Le risque est réduit grace a des logiciel d'Anti Ban qui déconnecte le compte quand le logiciel sent une probable détection par roblox.</div></div>
+    </div>
+    <div class="fi">
+      <div class="fq" onclick="tog(this)">Comment les items sont-ils transférés ?<div class="arr-wrap">▾</div></div>
+      <div class="fa"><div class="fa-in">Via le système de trade in-game de MM2. Le transfert se fait manuellement à intervalles réguliers vers le compte cible, avec des délais pour ne pas générer de pattern suspect.</div></div>
+    </div>
+    <div class="fi">
+      <div class="fq" onclick="tog(this)">Peut-on voir les stats en temps réel ?<div class="arr-wrap">▾</div></div>
+      <div class="fa"><div class="fa-in">Non.</div></div>
+    </div>
+    <div class="fi">
+      <div class="fq" onclick="tog(this)">Depuis combien de temps ce projet existe ?<div class="arr-wrap">▾</div></div>
+      <div class="fa"><div class="fa-in">Parti d'un usage purement personnel pour farmer mon propre compte, le setup s'est structuré au fil du temps. Plusieurs machines dédiées et des mois d'optimisation des scripts aujourd'hui.</div></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="tags">
+      <span class="tag tg">Roblox MM2</span>
+      <span class="tag tp">Bot farm</span>
+      <span class="tag tt">Auto 24/7</span>
+    </div>
+    <span class="fnote">Projet indépendant · non affilié à Roblox Corp.</span>
+  </div>
+
+</div>
+
+<script>
+function tog(el){
+  const fi=el.parentElement;
+  const isOpen=fi.classList.contains('open');
+  document.querySelectorAll('.fi.open').forEach(f=>f.classList.remove('open'));
+  if(!isOpen)fi.classList.add('open');
+}
+</script>
